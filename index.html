@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+  <div class="header">
+    <img class="header__logo" src="/images/Logo.svg">
+    <div class="header__nav">
+      <a class="header__link" href="#menu">Menu</a>
+      <a class="header__link" href="#recipes">Recipes</a>
+      <a class="header__link" href="#booking">Book a table</a>
+      <a class="header__link" href="#contacts">Contacts</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero__text">
+      <h1 class="hero__title">Fresh coffee on your corner</h1>
+      <p class="hero__subtitle">Small batches, friendly faces and a quiet place to work or catch up with friends.</p>
+      <div class="hero__info">
+        <p class="hero__hours"><b>Hours</b><br><br>Mon–Fri 8:00–20:00<br>Sat–Sun 9:00–18:00</p>
+        <p class="hero__adress"><b>Address</b><br><br>14 Maple Street</p>
+      </div>
+    </div>
+    <img class="hero__img" src="images/IMG_2045.svg" alt="image">
+  </div>
+
+  <section class="menu" id="menu">
+    <h1 class="menu-title">Menu</h1>
+    <p class="menu-subtitle">Our beans are roasted every week by a small local roastery. Oat and almond milk are free.</p>
+    <div class="menu__cards">
+      <div class="menu__card">
+        <h4 class="menu__card__title">Coffee</h4>
+        <p class="menu__card__item">Espresso ........................................ $2</p>
+        <p class="menu__card__item">Americano ................................ $2.50</p>
+        <p class="menu__card__item">Cappuccino ............................... $3.25</p>
+        <p class="menu__card__item">Flat White ................................. $3.50</p>
+        <p class="menu__card__item">Iced Latte .................................. $3.75</p>
+      </div>
+      <div class="menu__card">
+        <h4 class="menu__card__title">Tea</h4>
+        <p class="menu__card__item">Green Tea .................................... $2</p>
+        <p class="menu__card__item">Earl Grey ...................................... $2</p>
+        <p class="menu__card__item">Chai Latte ................................. $3.50</p>
+        <p class="menu__card__item">Herbal Infusion ....................... $2.25</p>
+      </div>
+      <div class="menu__card">
+        <h4 class="menu__card__title">Pastries</h4>
+        <p class="menu__card__item">Butter Croissant ...................... $2.25</p>
+        <p class="menu__card__item">Cinnamon Roll ......................... $2.75</p>
+        <p class="menu__card__item">Carrot Cake ............................. $3.50</p>
+        <p class="menu__card__item">Oat Cookie ............................... $1.50</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipes" id="recipes">
+    <h2 class="recipes__title">Recipes</h2>
+    <p class="recipes__subtitle">Two easy ways to brew our coffee at home:</p>
+    <div class="recipes__cards">
+      <div class="recipe-card">
+        <img class="recipe-card__img" src="images/Untitled-1.svg">
+        <div class="recipe-card__bottom">
+          <h3 class="recipe-card__title">Pour-over</h3>
+          <p class="recipe-card__time">~4 min</p>
+        </div>
+      </div>
+      <div class="recipe-card">
+        <img class="recipe-card__img" src="images/moka pot.svg">
+        <div class="recipe-card__bottom">
+          <h3 class="recipe-card__title">Moka pot</h3>
+          <p class="recipe-card__time">~10 min</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <h2 class="booking__title">Book a table</h2>
+    <form class="bookingForm">
+      <div class="bookingForm__row">
+        <div class="bookingForm__field">
+          <label class="bookingForm__label">Name *</label>
+          <input class="bookingForm__input" type="text" placeholder="Your name" required>
+        </div>
+        <div class="bookingForm__field">
+          <label class="bookingForm__label">Number of guests *</label>
+          <input class="bookingForm__input" type="number" placeholder="1–6">
+        </div>
+      </div>
+      <div class="bookingForm__row">
+        <div class="bookingForm__field">
+          <label class="bookingForm__label">Date and time *</label>
+          <input class="bookingForm__input" type="text" placeholder="mm/dd/yyyy, --:--" required>
+        </div>
+        <div class="bookingForm__field">
+          <label class="bookingForm__label">Email *</label>
+          <input class="bookingForm__input" type="text" placeholder="you@example.com" required>
+        </div>
+      </div>
+      <p class="bookingForm__agree"><input type="checkbox"> I agree to the terms of use</p>
+      <button class="bookingForm__button" type="submit">Book a table</button>
+    </form>
+  </section>
+
+  <div class="footer" id="footer">
+    <div class="footer__top">
+      <div class="footer__about">
+        <h2 class="footer__title">About us</h2>
+        <p class="footer__text">Corner Brew opened in 2019 as a tiny coffee bar with four tables. We still bake everything in-house every morning and know most of our guests by name.</p>
+      </div>
+      <img class="footer__logo" src="images/logo white.svg">
+      <div class="footer__social">
+        <h3 class="footer__social-title">Follow us</h3>
+        <a class="footer__link" href="https://instagram.com"><img src="images/insta.svg" class="footer__icon">Instagram</a>
+        <a class="footer__link" href="https://facebook.com"><img src="images/fb.svg" class="footer__icon">Facebook</a>
+      </div>
+    </div>
+    <!-- <p>Made with love</p> -->
+    <p class="footer__copyright" style="color: #CDBFB3;">© 2026 Your name</p>
+  </div>
+</body>
+</html>
